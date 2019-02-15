@@ -8,6 +8,7 @@ I present some basic examples here. ( C Program ):
 
 
 For basic :
+-----------
 
 #include<stdio.h>
 void main(void)
@@ -24,6 +25,7 @@ void main(void)
 
 
 more example 1:
+---------------
 
 
 #include<stdio.h>
@@ -45,6 +47,7 @@ int main()
 
 
 more example 2:
+---------------
 
 
 #include<stdio.h>
@@ -71,6 +74,7 @@ int main()
 
 
 while :
+-------
 
 #include<stdio.h>
 void main(void)
@@ -91,6 +95,7 @@ void main(void)
 
 
 addition :
+----------
 
 
 #include<stdio.h>
@@ -111,6 +116,7 @@ int main()
 ---------------------------------------------------------------------------------------------
 
 if/else :
+--------
 
 #include<stdio.h>
 int main()
@@ -128,9 +134,41 @@ int main()
 }
 
 
+
+
+
+more example 1:
+---------------
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i=6;
+
+    if(i>7)
+    {
+         printf("noob");
+    }
+
+    else if(i<=7)
+    {
+
+        printf("pro");
+    }
+    else
+    {
+        printf("ultra pro");
+    }
+    return 0;
+}
+
+
 ----------------------------------------------------------------------------------------------
 
 do-while:
+---------
 
 
 #include<stdio.h>
