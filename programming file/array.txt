@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int i,num[10]={10,54,74,32,95,14,35,65,74,16};
+    for(i=0;i<9;i++){
+            printf("%d\n",num[i]);
+
+    }
+    return 0;
+}
