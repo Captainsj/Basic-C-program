@@ -1,0 +1,90 @@
+Function:
+---------
+---------
+
+#include <stdio.h>
+
+void sum(int a, int b){
+	int result = a + b;
+	printf("sum result %d",result);
+}
+
+void sub(int a, int b){
+	int result = a - b;
+	printf("\n sub result %d",result);
+}
+
+int main()
+{
+		int number1, number2;
+
+		printf("Please enter your first number: ");
+		scanf("%d",&number1);
+
+		printf("Please enter your second number: ");
+		scanf("%d",&number2);
+
+		sum(number1, number2);
+		sub(number1, number2);
+		getchar();
+
+		return 0;
+}
+
+
+
+
+---------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+assignment:
+--------------
+
+
+#include <stdio.h>
+void calculator (int operator, double firstNumber, double secondNumber){
+    switch(operator)
+    {
+        case 1:
+            return printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber+secondNumber);
+            break;
+
+        case 2:
+            return printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber-secondNumber);
+            break;
+
+        case 3:
+            return printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber*secondNumber);
+            break;
+
+        case 4:
+            return printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber/secondNumber);
+            break;
+
+        default:
+            return printf("Error! operator is not correct");
+    }
+}
+
+void main()
+{
+    int i;
+    for(i = 1; i<= 4; i++){
+        int operator;
+        double firstNumber,secondNumber;
+
+        printf("\nEnter a Number above them (1 for +,2 for -,3 for *,4 for /): ");
+        scanf("%d", &operator);
+
+        printf("\nEnter two Number: ");
+        scanf("%lf %lf",&firstNumber, &secondNumber);
+
+        calculator(operator, firstNumber, secondNumber);
+    }
+    return 0;
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
