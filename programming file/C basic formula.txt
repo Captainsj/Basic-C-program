@@ -188,3 +188,39 @@ getch();
 
 
 ----------------------------------------------------------------------------------------------
+gpa calculate:
+--------------
+
+#include <stdio.h>
+int main()
+{
+    float phy,math,prog,dis;
+    int phy_credit,math_credit,disc_credit,prog_credit;
+
+    printf("Enter Your Physics Grade: ");
+    scanf("%f",&phy);
+    printf("Enter Your Physics Credit: ");
+    scanf("%d",&phy_credit);
+
+    printf("\nEnter Your Mathematics Grade: ");
+    scanf("%f",&math);
+    printf("Enter Your Mathematics Credit: ");
+    scanf("%d",&math_credit);
+
+    printf("\nEnter Your Programming Grade: ");
+    scanf("%f",&prog);
+    printf("Enter Your Programming Credit: ");
+    scanf("%d",&prog_credit);
+
+    printf("\nEnter Your Discrete Math Grade: ");
+    scanf("%f",&dis);
+    printf("Enter Your Discrete Math Credit: ");
+    scanf("%d",&disc_credit);
+
+
+
+    float GPA =  ((phy * phy_credit)+(math * math_credit)+(prog * prog_credit)+(dis * disc_credit))/(phy_credit + math_credit + disc_credit + prog_credit);
+    printf("\nYour Semester gpa is: %.2f", GPA);
+    return 0;
+
+}
